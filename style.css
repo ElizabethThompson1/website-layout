@@ -50,9 +50,10 @@ header {
   padding: 2em 0;
 }
 
-@media (max-width: 675px) {
+@media (max-width: 600px) {
   .container-nav {
     flex-direction: column;
+    width: 600px;
   }
 
   header {
@@ -96,6 +97,7 @@ nav a:focus {
 @media (max-width: 675px) {
   nav ul {
     flex-direction: column;
+    width: 600px;
   }
 
   nav li {
