@@ -1,0 +1,240 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+body {
+  margin: 0;
+}
+header {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* =================
+Typography
+================= */
+
+h1 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+/* =================
+Layout
+================= */
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background: #f8f8f8;
+  padding: 2em 0;
+}
+
+@media (max-width: 675px) {
+  .container-nav {
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+/* navigation */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+@media (max-width: 675px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.5em 0;
+  }
+}
+
+/* =================
+End of Navigation bar
+================= */
+/* =================
+main colunmn
+================= */
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.column1 {
+  width: 1400px;
+  margin-right: 5%;
+  max-width: 757px;
+}
+.column2 {
+  max-width: 300px;
+}
+.column1 .link1 {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(66, 64, 64);
+}
+.column1 a {
+  color: #1792d2;
+}
+
+.column1 div h3 {
+  color: rgb(69, 68, 68);
+}
+.vertical {
+  border-bottom: rgb(103, 102, 102) solid 2px;
+  margin-bottom: 40px;
+}
+.horizontal {
+  display: flex;
+  margin-top: 60px;
+}
+.column1 .vertical img {
+  height: 400px;
+  width: 100%;
+  pointer-events: none;
+}
+.horizontal img {
+  margin-right: 20px;
+  height: 242px;
+  width: 242px;
+}
+.column2 img {
+  margin: 0;
+  height: 200px;
+  width: 200px;
+}
+h3 {
+  font-weight: lighter;
+  color: #707070;
+}
+h4 {
+  color: rgb(51, 119, 160);
+  font-size: 20px;
+}
+.description h1 {
+  margin-bottom: 70px;
+}
+
+/* =================
+side colunmn
+================= */
+.about-me {
+  border: rgb(237, 235, 235) solid 20px;
+  padding: 30px;
+  margin-bottom: 140px;
+}
+.recent-posts {
+  border: rgb(237, 235, 235) solid 20px;
+  padding: 30px;
+}
+
+@media (max-width: 600px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .horizontal {
+    flex-direction: column;
+    margin: 6px 0;
+    width: 500px;
+  }
+  .column1 .main-text {
+    margin: 0;
+    max-width: 500px;
+  }
+  .column1 {
+    margin: 0;
+    max-width: 500px;
+  }
+  .horizontal img {
+    margin: 3px 0px;
+    height: 400px;
+    width: 500px;
+  }
+  .about-me {
+    justify-content: center;
+    border: rgb(237, 235, 235) solid 20px;
+    width: 400px;
+  }
+  .about-me img {
+    width: 400px;
+    height: 300px;
+  }
+  .recent-posts {
+    border: rgb(237, 235, 235) solid 20px;
+    width: 400px;
+  }
+  .recent-posts img {
+    width: 400px;
+    height: 300px;
+  }
+}
+/*==================
+footer
+=================*/
+
+footer {
+  background-color: #143774;
+  height: 140px;
+  text-align: center;
+  color: white;
+}
+
+footer .footer-text {
+  padding-top: 30px;
+}
