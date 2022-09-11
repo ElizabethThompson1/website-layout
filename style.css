@@ -122,12 +122,12 @@ section {
 .column2 {
   max-width: 300px;
 }
-.column1 .link1 {
+.link1 {
   text-decoration: none;
   font-weight: bold;
   color: rgb(66, 64, 64);
 }
-.column1 a {
+a {
   color: #1792d2;
 }
 
@@ -203,7 +203,7 @@ side colunmn
   }
   .horizontal img {
     margin: 3px 0px;
-    height: 400px;
+    height: 300px;
     width: 500px;
   }
   .about-me {
@@ -213,7 +213,7 @@ side colunmn
   }
   .about-me img {
     width: 400px;
-    height: 300px;
+    height: 200px;
   }
   .recent-posts {
     border: rgb(237, 235, 235) solid 20px;
@@ -221,7 +221,7 @@ side colunmn
   }
   .recent-posts img {
     width: 400px;
-    height: 300px;
+    height: 200px;
   }
 }
 /*==================
@@ -237,4 +237,42 @@ footer {
 
 footer .footer-text {
   padding-top: 30px;
+}
+
+/*==================
+about-me page
+=================*/
+
+.side-image.me {
+  height: 120px;
+  width: 200px;
+}
+.recent-posts.about-me {
+  align-content: center;
+}
+
+@media (max-width: 600px) {
+  .column1 .main-text {
+    margin: 40px;
+    max-width: 500px;
+  }
+
+  .column1 #main-image {
+    margin: 3px 0px;
+    height: 300px;
+    width: 500px;
+  }
+  .about-me {
+    justify-content: center;
+    border: rgb(237, 235, 235) solid 20px;
+    width: 400px;
+  }
+  .recent-posts {
+    border: rgb(237, 235, 235) solid 20px;
+    width: 400px;
+  }
+  .column2 .side-image.me {
+    width: 400px;
+    height: 200px;
+  }
 }
